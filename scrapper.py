@@ -72,7 +72,7 @@ for i, card in enumerate(cards):
         driver.find_element(By.ID, card).click()
     else:
         driver.execute_script("window.scrollTo(0, 0);")
-        driver.find_elements(By.XPATH, '//button[contains(@class, "styles__Button-sc-1qlvqus-0")]')[i].click()
+        driver.find_elements(By.XPATH, '//button[contains(@class, "styles__Button-sc-1j31hgz-0")]')[i].click()
     time.sleep(2)
     # Get scroll height
     last_height = driver.execute_script("return document.body.scrollHeight")
